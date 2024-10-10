@@ -1,0 +1,55 @@
+/* Resete */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Variáveis */
+:root {
+  /* cores */
+  --hue: 218;
+
+  --base-color: hsl(var(--hue), 60%, 40%);
+  --base-color-second: hsl(var(--hue), 60%, 30%);
+  --base-color-alt: hsl(var(--hue), 57%, 53%);
+  --title-color: hsl(var(--hue), 41%, 10%);
+  --text-color: hsl(0%, 0%, 46%);
+  --text-color-light: hsl(0, 0%, 98%);
+  --body-color: hsl(0%, 0% 98%);
+  --star-color: hsl(56%, 100%, 48%);
+
+  /* Fontes */
+  --title-font-size: 1.875rem;
+  --subtitle-font-size: 1rem;
+
+  /* Família */
+  --title-font: 'Poppins', sans-serif;
+  --body-font: 'DM Sans', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base */
+body {
+  font: 400 1rem var(--body-font);
+  color: var(--text-color);
+  background: var(--body-color);
+
+  --webkit-font-smoothing: antialiased;
+}
