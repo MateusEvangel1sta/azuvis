@@ -84,6 +84,24 @@ body {
   background: var(--base-color-alt);
 }
 
+.divider-1 {
+  height: 1px;
+  background: linear-gradient(
+    270deg,
+    hsla(var(--hue), 36%, 57%, 1),
+    hsla(var(--hue), 65%, 88%, .34)
+  );
+}
+
+.divider-2 {
+  height: 1px;
+  background: linear-gradient(
+    270deg,
+    hsla(var(--hue), 65%, 88%, 0.34),
+    hsla(var(--hue), 36%, 57%, 1),
+  );
+}
+
 /* Layout */
 .grid {
   display: grid;
@@ -288,4 +306,44 @@ nav.show div.icon-close {
 
 #home .text p {
   margin-bottom: 2rem;
+}
+
+/* Seção about */
+#about {
+  background: white;
+}
+
+#about .container {
+  margin: 0;
+}
+
+#about .image {
+  position: relative;
+}
+
+#about .image::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  
+  background: var(--base-color-second);
+
+  position: absolute;
+  top: -8.3%;
+  left: -33%;
+
+  z-index: 0;
+}
+
+#about .image img {
+  position: relative;
+}
+
+#about .image img,
+#about .image::before {
+  border-radius: 0.25rem;
+}
+
+#about .text {
+  margin: 0 1.5rem;
 }
