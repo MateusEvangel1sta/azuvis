@@ -465,3 +465,43 @@ nav.show div.icon-close {
 #contact ul li i {
   color: var(--base-color);
 }
+
+/* Seção rodapé */
+footer {
+  background-color: var(--base-color);
+}
+
+footer.section {
+  padding: 4rem 0;
+}
+
+footer .logo {
+  width: 28%;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+footer .brand p {
+  color: var(--text-color-light);
+  margin-bottom: 0.75rem;
+}
+
+footer i {
+  font-size: 1.5rem;
+  color: var(--text-color-light);
+}
+
+footer .social,
+footer .social a {
+  grid-auto-flow: column;
+  width: fit-content;
+}
+
+footer .social a {
+  transition: 0.3s;
+  display: inline-block;
+}
+
+footer .social a:hover {
+  transform: translateY(-8px)
+}
