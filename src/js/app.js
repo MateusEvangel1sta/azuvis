@@ -17,3 +17,20 @@ for (const link of links) {
     nav.classList.remove('show');
   });
 }
+
+
+// Slider com Swiper
+const swiper = new Swiper('.swiper', {
+  slidesPerview: 1,
+  pagination: {
+    el: '.swiper.pagination'
+  },
+  mousewheel: true,
+  keyboard: true,
+  breakpoints: {
+    767: {
+      slidesPerview: 2,
+      setWrapperSize: true
+    }
+  }
+});
